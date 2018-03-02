@@ -1,3 +1,10 @@
+isc-dhcp (4.3.3-5ubuntu12.10) xenial; urgency=medium
+
+  * dhclient-script.linux: handle empty case also when waiting for ipv6 link
+    local DAD. (LP: #1718568)
+
+ -- Dan Streetman <dan.streetman@canonical.com>  Fri, 02 Mar 2018 13:16:05 -0500
+
 isc-dhcp (4.3.3-5ubuntu12.9) xenial-security; urgency=medium
 
   * SECURITY UPDATE: DoS via concurrent TCP sessions

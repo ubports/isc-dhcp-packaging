@@ -167,12 +167,18 @@ ipv6_link_up_and_dad() {
             error "$dev: checking for link-local addresses failed";
             return 1
         }
+        # another note: the output may be empty if the link local tentative addr
+        # isn't up just yet, so we need to make sure there is at least one 'inet6'
+        # match before returning success.  We need to keep checking for both
+        # 'tentative' case and default (no inet6 address) case. (LP: #1718568)
+        # Don't reorder tentative/inet6 - we need to check for tentative first.
         case " $out " in
             *\ dadfailed\ *)
                 error "$dev: ipv6 dad failed."
                 return 1;;
             *\ tentative\ *) :;;
-            *) return 0;;
+            *\ inet6\ *) return 0;;
+            *) :;; 
         esac
         [ $n -lt $attempts ] || {
             error "$dev: time out waiting for permanent link-local address"
