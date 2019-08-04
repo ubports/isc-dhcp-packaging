@@ -44,6 +44,9 @@
   /{,var/}run/connman/dhclient*.pid lrw,
   /{,var/}run/connman/dhclient*.leases lrw,
 
+  # aethercast
+  /{,var/}run/aethercast/dhclient*.leases lrw,
+
   # synce-hal
   /usr/share/synce-hal/dhclient.conf r,
 
