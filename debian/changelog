@@ -1,3 +1,9 @@
+isc-dhcp (4.3.3-6ubports1) xenial; urgency=medium
+
+  * Merge changes from xenial up to version 4.3.3-5ubuntu12.10
+
+ -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Thu, 14 Nov 2019 23:23:25 +0700
+
 isc-dhcp (4.3.3-6ubports0) xenial; urgency=medium
 
   * debian/apparmor/sbin.dhclient:
