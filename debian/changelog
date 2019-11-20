@@ -1,3 +1,15 @@
+isc-dhcp (4.3.3-6ubports1+rebuild1) xenial; urgency=medium
+
+  * No-change rebuild after fixing Jenkinsfile.
+
+ -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Thu, 21 Nov 2019 02:23:23 +0700
+
+isc-dhcp (4.3.3-6ubports1) xenial; urgency=medium
+
+  * Merge changes from xenial up to version 4.3.3-5ubuntu12.10
+
+ -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Thu, 14 Nov 2019 23:23:25 +0700
+
 isc-dhcp (4.3.3-6ubports0) xenial; urgency=medium
 
   * debian/apparmor/sbin.dhclient:
@@ -5,6 +17,13 @@ isc-dhcp (4.3.3-6ubports0) xenial; urgency=medium
       dhclient to run a DHCP client.
 
  -- Alberto Mardegan <mardy@users.sourceforge.net>  Sun, 04 Aug 2019 10:06:57 +0200
+
+isc-dhcp (4.3.3-5ubuntu12.10) xenial; urgency=medium
+
+  * dhclient-script.linux: handle empty case also when waiting for ipv6 link
+    local DAD. (LP: #1718568)
+
+ -- Dan Streetman <dan.streetman@canonical.com>  Fri, 02 Mar 2018 13:16:05 -0500
 
 isc-dhcp (4.3.3-5ubuntu12.9) xenial-security; urgency=medium
 
