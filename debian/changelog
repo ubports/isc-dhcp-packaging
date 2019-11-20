@@ -1,3 +1,9 @@
+isc-dhcp (4.3.3-6ubports1+rebuild1) xenial; urgency=medium
+
+  * No-change rebuild after fixing Jenkinsfile.
+
+ -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Thu, 21 Nov 2019 02:23:23 +0700
+
 isc-dhcp (4.3.3-6ubports1) xenial; urgency=medium
 
   * Merge changes from xenial up to version 4.3.3-5ubuntu12.10
